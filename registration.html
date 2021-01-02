@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="icon" type="" href="fab fa-apple">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+<body>
+    <!--------------------------------------------------------------->
+    <!-----------------------------NAVBAR---------------------------->
+    <!--------------------------------------------------------------->
+    <nav class="navbar navbar-sticky-top navbar-default navbar-expand-sm navbar-nav navbar-dark py-6">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item">
+                      <a class="navbar-brand" href="Index.html"><i class='fab fa-apple' style='font-size:25px; color: #ffffff;'></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comming.html">Comming Soon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Convention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="Index.html"><i class='fas fa-shopping-bag' style='font-size:22px; color: #ffffff;'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------------------------------------>
+    <!-------------------------Event-logo ------------------------>
+    <!------------------------------------------------------------>
+    
+    <div class="event-logo">
+        <div class="row">
+            <div class="col">
+                <div class="event-logo-a ">
+                    <h1 class="d-flex justify-content-center event-logo-b">Apple Event</h1>
+                    <p class="d-flex justify-content-center">Introducing the new MacBook Air, 13‑inch MacBook Pro, and Mac mini, all with the Apple M1 chip.</p>
+                    <a class="d-flex justify-content-center" href="#" role="button">Watch the event &nbsp;<i class='far fa-play-circle' style='font-size:25px;'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!-------------------------Speakers tittle -------------------------->
+    <!------------------------------------------------------------>
+    
+    <div class="speaker-t">
+        <div class="row">
+            <div class="col">
+                <h1 class="mt-2 pl-5">Speakers</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!-------------------------Speakers tim cook ----------------->
+    <!------------------------------------------------------------>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 speaker-tim">
+                <h1 class="pt-5">Tim Cook</h1>
+                <p> Chief Executive Officer</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!-------------------------Speakers eddie cue ----------------->
+    <!------------------------------------------------------------>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 speaker-eddie">
+                <h1 class="pt-5">Eddie Cue</h1>
+                <p> Senior Vice President, <br>Internet Software and Services</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!------------------------------------------------------------>
+    <!-------------------------Registration form ----------------->
+    <!------------------------------------------------------------>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-md-center">
+                <h1>Registration form</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--1 row -->
+    <form class="needs-validation" novalidate>
+        <div class="container cs-pad">
+            <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" minlength="3" maxlength="15" pattern="[A-Za-z]{3,15}" oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+                <div class="invalid-feedback"> The First name must contain at least three characters</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control"  id="validationCustom02" placeholder="Last name"  minlength="3" maxlength="15" pattern="[A-Za-z]{3,15}" oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+                <div class="invalid-feedback">The Last name must contain at least three characters</div>
+            </div>
+            </div>
+
+            <!--2 row -->
+            <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01"> E-mail</label>
+                <input type="email" class="form-control" id="validationCustomemail" placeholder="e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+                <div class="invalid-feedback"> Please provide valid E-mail 
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomPhone"> Phone number</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                    </div>
+                    <input type="text" class="form-control" id="" text-type="number" inputmode="numeric" placeholder="Phone number" required pattern="[0-9]{9,15}" maxlength="15" minlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                    <div class="invalid-feedback">
+                        Please provide a valid Phone number !
+                    </div>
+                    <div class="valid-feedback">Looks good !</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--3 row -->
+            <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom03">Street</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Street" minlength="3" maxlength="15"  pattern="[A-Za-z]{3,15}" oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                <div class="invalid-feedback">
+                Please provide a valid Adress.
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>    
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Nr.</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Nr." minlength="1" maxlength="6"  pattern="[0-9]{1,6}" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                <div class="invalid-feedback">
+                Please provide a valid Street number.
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div> 
+            </div>
+            </div> 
+            
+            <!--4 row-->
+            <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" minlength="4" maxlength="5" pattern="[0-9]{1,6}" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                <div class="invalid-feedback">
+                Please provide a valid zip.
+                </div>
+                <div class="valid-feedback">
+                Looks good!
+                </div> 
+            </div><div class="col-md-4 mb-3">
+                <label for="validationCustom05">City</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="City" minlength="3" maxlength="15" pattern="[A-Za-z]{3,13}" oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                <div class="invalid-feedback">
+                Please provide a valid City.
+                </div>
+                <div class="valid-feedback">
+                Looks good!
+                </div> 
+            </div>
+            </div>
+
+            
+            <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                You must agree before submitting.
+                </div>
+                <div class="valid-feedback">Looks good !</div>
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-12 but-on">
+                <input class="btn btn-primary but-on" type="submit" value="submit">
+            </div>  
+            </div>
+        </div>
+    </form>
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+            }, false);
+        });
+        }, false);
+    })();
+    </script>
+  
+
+
+    
+
+
+
+    <!------------------------------------------------------------>
+    <!-------------------------bootstrap-------------------------->
+    <!------------------------------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+</body>
+</html>
